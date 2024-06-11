@@ -1,0 +1,39 @@
+name: .NET
+
+on: 
+  workflow_dispatch:
+  
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 6.x
+      - name: Install dependencies
+        run: dotnet restore ./Spaceship_Server
+      - name: Build
+        run: dotnet build ./Spaceship_Server --configuration Release --no-restore
+          #- name: Test
+          # run: dotnet test -p:CollectCoverage=true -p:CoverletOutput=../coverage/ -p:CoverletOutputFormat=opencover ./SpaceBattle.Lib.Test
+          #- name: Codecov
+          #uses: codecov/codecov-action@v3.1.1
+      - name: Install dotnetGcdump
+        run: dotnet tool install --global dotnet-gcdump
+      - name: Run dotnet-gcdump 
+        run: dotnet-test & ps axf | grep dotnet | grep -v grep | awk '{print  "dotnet-gcdump collect -o .gcdump -p " $1}' | sh
+      - name: Out
+        run: ls -l .gcdump
+      - name: Archive gcdump results
+        uses: actions/upload-artifact@v4
+        with:
+          name: .gcdump
+          path: .gcdump
+    

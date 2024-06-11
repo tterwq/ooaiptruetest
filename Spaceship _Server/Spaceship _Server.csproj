@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Spaceship__Server</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="corewcf.http" Version="1.3.2" />
+    <PackageReference Include="corewcf.nettcp" Version="1.3.2" />
+    <PackageReference Include="corewcf.primitives" Version="1.3.2" />
+    <PackageReference Include="corewcf.webhttp" Version="1.3.2" />
+    <PackageReference Include="Hwdtech.Core" Version="1.0.0" />
+    <PackageReference Include="Hwdtech.IoC" Version="1.0.0" />
+    <PackageReference Include="Hwdtech.Ioc.ScopeBasedIoCImplementation" Version="1.0.0" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="17.4.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
+    <PackageReference Include="Moq" Version="4.18.3" />
+    <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
+    <PackageReference Include="stopwatch" Version="1.0.6" />
+  </ItemGroup>
+
+</Project>
