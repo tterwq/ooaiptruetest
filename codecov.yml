@@ -1,0 +1,4 @@
+ignore:
+  ["Spaceship.Macro.Test", "Spaceship.Exceptions.Test", "Spaceship.IoC.Test.No.Strategies", "**/StartMoveCommand.cs", "**/Angle.cs", "**/CreateIoCDependenciesStrategy.cs"]
+codecov:
+  token: ${{ secrets.CODECOV_TOKEN }}

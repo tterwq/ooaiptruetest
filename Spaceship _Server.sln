@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spaceship _Server", "Spaceship _Server\Spaceship _Server.csproj", "{B9C93717-00E8-4571-9E52-33F668C42CFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceshipServer.Texts.XUnit", "SpaceshipServer.Texts.XUnit\SpaceshipServer.Texts.XUnit.csproj", "{6A7E76EC-3A39-4420-820A-6A597A641E77}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B9C93717-00E8-4571-9E52-33F668C42CFD} = {B9C93717-00E8-4571-9E52-33F668C42CFD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.IoC.Test.No.Strategies", "Spaceship.IoC.Test.No.Strategies\Spaceship.IoC.Test.No.Strategies.csproj", "{CE30CCD3-527B-4EFB-A1FC-BE4AE09B83B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship.Macro.Test", "Spaceship.Macro.Test\Spaceship.Macro.Test.csproj", "{DEC017CA-4991-4F3A-A25D-AB91F7D95BD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHttp", "WebHttp\WebHttp.csproj", "{F9FE563D-F308-4452-83CB-0F4C4C15FE44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9C93717-00E8-4571-9E52-33F668C42CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9C93717-00E8-4571-9E52-33F668C42CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9C93717-00E8-4571-9E52-33F668C42CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9C93717-00E8-4571-9E52-33F668C42CFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A7E76EC-3A39-4420-820A-6A597A641E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A7E76EC-3A39-4420-820A-6A597A641E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A7E76EC-3A39-4420-820A-6A597A641E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A7E76EC-3A39-4420-820A-6A597A641E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE30CCD3-527B-4EFB-A1FC-BE4AE09B83B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE30CCD3-527B-4EFB-A1FC-BE4AE09B83B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE30CCD3-527B-4EFB-A1FC-BE4AE09B83B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE30CCD3-527B-4EFB-A1FC-BE4AE09B83B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC017CA-4991-4F3A-A25D-AB91F7D95BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC017CA-4991-4F3A-A25D-AB91F7D95BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC017CA-4991-4F3A-A25D-AB91F7D95BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC017CA-4991-4F3A-A25D-AB91F7D95BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9FE563D-F308-4452-83CB-0F4C4C15FE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9FE563D-F308-4452-83CB-0F4C4C15FE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9FE563D-F308-4452-83CB-0F4C4C15FE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FE563D-F308-4452-83CB-0F4C4C15FE44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5525BB41-16E1-4E4D-A188-19696A89DE1E}
+	EndGlobalSection
+EndGlobal
